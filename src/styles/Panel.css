@@ -1,0 +1,12 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  background-color: #2e6b6e;
+  width: 100%;
+}
+
+.panel-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
