@@ -1,11 +1,14 @@
 import React from 'react';
 import '../index.css';
+import Display from './Display';
+import Panel from './Panel';
 
 function App() {
   return (
-    <div>
-      <h1 className="h1">Hello</h1>
-    </div>
+    <>
+      <Display result="10" />
+      <Panel />
+    </>
   );
 }
 
