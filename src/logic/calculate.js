@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-expressions */
 import Operate from './operate';
 
 const Calculate = (data, button) => {
@@ -12,9 +11,17 @@ const Calculate = (data, button) => {
       break;
     case '0': case '1': case '2': case '3': case '4': case '5': case '6': case '7': case '8': case '9':
       if (operation === null) {
-        total === null ? total = button : total += button;
+        if (total === null) {
+          total = button;
+        } else {
+          total += button;
+        }
       } else if (operation !== null) {
-        next === null ? next = button : next += button;
+        if (next === null) {
+          next = button;
+        } else {
+          next += button;
+        }
       }
       break;
     case '.':
