@@ -1,8 +1,11 @@
+const Calculate = ({ total, next, operation }, button) => {
+  let data = { total, next, operation };
 
-function Calculate(calc, button) {
-  let { total, next, operation} = calc;
+  if (button === 'AC') {
+    data = { total: null, next: null, operation: null };
+  }
 
-  
-}
+  return data;
+};
 
 export default Calculate;
