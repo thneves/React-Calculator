@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div className="calculator">
-        <Display result={Calculate(null, null)} />
+        <Display result={ Calculate(null,null) } />
         <Panel />
       </div>
     </>
