@@ -5,23 +5,25 @@ const Operate = (numberOne, numberTwo, operation) => {
   const numTwo = new Big(numberTwo);
   let total;
 
-  if (operation === '+') {
-    total = numOne.plus(numTwo);
+  switch (operation) {
+    case '+':
+      total = numOne.plus(numTwo);
+      break;
+    case '-':
+      total = numOne.minus(numTwo);
+      break;
+    case 'x':
+      total = numOne.times(numTwo);
+      break;
+    case '/':
+      total = numOne.times(numTwo);
+      break;
+    default:
+      total = null;
   }
 
-  if (operation === '-') {
-    total = numOne.minus(numTwo);
-  }
-
-  if (operation === 'x') {
-    total = numOne.times(numTwo);
-  }
-
-  if (operation === '/') {
-    total = numOne.div(numTwo);
-  }
-
-  return total;
+  const result = total.toString();
+  return result;
 };
 
 export default Operate;
