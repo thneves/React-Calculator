@@ -17,15 +17,7 @@ class App extends React.Component {
   }
 
   handleClick(button) {
-    const { total } = this.state;
-    const { next } = this.state;
-    const { operation } = this.state;
-
-    Calculate({ total, next, operation }, button);
-
-    this.setState({
-
-    });
+    this.setState(Calculate(this.state, button));
   }
 
   render() {
