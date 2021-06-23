@@ -16,7 +16,7 @@ const Operate = (numberOne, numberTwo, operation) => {
       total = numOne.times(numTwo);
       break;
     case '/':
-      total = numOne.times(numTwo);
+      total = numOne.div(numTwo);
       break;
     default:
       total = null;

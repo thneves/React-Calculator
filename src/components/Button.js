@@ -8,11 +8,12 @@ function Button({ name, clickHandler }) {
 
 Button.propTypes = {
   name: PropTypes.string,
-  clickHandler: PropTypes.func.isRequired,
+  clickHandler: PropTypes.func,
 };
 
 Button.defaultProps = {
   name: '',
+  clickHandler: () => '',
 };
 
 export default Button;
