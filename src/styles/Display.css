@@ -6,3 +6,8 @@
   border-radius: 5px;
   background-color: #a7bdbe;
 }
+
+.display-numbers {
+  text-align: right;
+  color: #042324;
+}

@@ -5,7 +5,7 @@ import '../styles/Display.css';
 function Display({ result, next, operation }) {
   return (
     <div className="display">
-      <h2>{ next || operation || result || '0' }</h2>
+      <h2 className="display-numbers">{ next || operation || result || '0' }</h2>
     </div>
   );
 }
