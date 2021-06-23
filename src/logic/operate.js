@@ -18,6 +18,13 @@ const Operate = (numberOne, numberTwo, operation) => {
     case '/':
       total = numOne.div(numTwo);
       break;
+    case '%':
+      if (numTwo !== null) {
+        total = numOne.plus(numTwo.div(100));
+      } else {
+        total = numOne.mod(numTwo);
+      }
+      break;
     default:
       total = null;
   }

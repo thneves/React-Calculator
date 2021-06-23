@@ -24,6 +24,19 @@ const Calculate = (data, button) => {
         }
       }
       break;
+    case 'AC':
+      total = null;
+      next = null;
+      operation = null;
+      break;
+    case '%':
+      if (total && !next) {
+        total /= 100;
+        total.toString();
+      } else if (total && next) {
+        operation = button;
+      }
+      break;
     case '.':
       if (operation !== null) {
         if (next === null) {

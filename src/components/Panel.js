@@ -14,15 +14,15 @@ function Panel({ clickHandler }) {
           <Button name="/" clickHandler={() => clickHandler('/')} />
         </div>
         <div className="panel-row">
-          <Button name="7" clickHandler={() => clickHandler('7')} />
-          <Button name="8" clickHandler={() => clickHandler('8')} />
           <Button name="9" clickHandler={() => clickHandler('9')} />
+          <Button name="8" clickHandler={() => clickHandler('8')} />
+          <Button name="7" clickHandler={() => clickHandler('7')} />
           <Button name="x" clickHandler={() => clickHandler('x')} />
         </div>
         <div className="panel-row">
-          <Button name="5" clickHandler={() => clickHandler('5')} />
           <Button name="6" clickHandler={() => clickHandler('6')} />
-          <Button name="7" clickHandler={() => clickHandler('7')} />
+          <Button name="5" clickHandler={() => clickHandler('5')} />
+          <Button name="4" clickHandler={() => clickHandler('4')} />
           <Button name="-" clickHandler={() => clickHandler('-')} />
         </div>
         <div className="panel-row">
