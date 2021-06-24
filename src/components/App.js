@@ -25,10 +25,16 @@ class App extends React.Component {
   }
 
   render() {
+    const { total } = this.state;
+    const { next } = this.state;
+    const { operation } = this.state;
     return (
       <div className="calculator">
-        {/* eslint-disable-next-line react/destructuring-assignment, max-len */}
-        <Display result={this.state.total} next={this.state.next} operation={this.state.operation} />
+        <Display
+          result={total}
+          next={next}
+          operation={operation}
+        />
         <Panel clickHandler={this.handleClick} />
       </div>
     );
