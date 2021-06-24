@@ -2,13 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../styles/Display.css';
 
-function Display({ result, next, operation }) {
-  return (
-    <div className="display">
-      <h2 className="display-numbers">{ next || operation || result || '0' }</h2>
-    </div>
-  );
-}
+const Display = ({ result, next, operation }) => <div className="display"><h2 className="display-numbers">{ next || operation || result || '0' }</h2></div>;
 
 Display.propTypes = {
   result: PropTypes.string,

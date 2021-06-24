@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import Button from './Button';
 import '../styles/Panel.css';
 
-function Panel({ clickHandler }) {
-  return (
+const Panel = ({ clickHandler }) => {
+  (
     <>
       <div className="panel">
         <div className="panel-row">
@@ -20,7 +20,7 @@ function Panel({ clickHandler }) {
           <Button name="x" clickHandler={() => clickHandler('x')} />
         </div>
         <div className="panel-row">
-          <Button name="6" clickHandler={() => clickHandler('6')} />
+          <Button name="6" clickHandler={handleClik = (button) => this.props.clickHandler(button)} />
           <Button name="5" clickHandler={() => clickHandler('5')} />
           <Button name="4" clickHandler={() => clickHandler('4')} />
           <Button name="-" clickHandler={() => clickHandler('-')} />
@@ -39,7 +39,7 @@ function Panel({ clickHandler }) {
       </div>
     </>
   );
-}
+};
 
 Panel.propTypes = {
   clickHandler: PropTypes.func.isRequired,
