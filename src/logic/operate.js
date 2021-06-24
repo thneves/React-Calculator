@@ -16,7 +16,7 @@ const Operate = (numberOne, numberTwo, operation) => {
       total = numOne.times(numTwo);
       break;
     case '/':
-      total = numOne.div(numTwo);
+      total = numberTwo === '0' ? 'Math error, start again' : numOne.div(numTwo);
       break;
     case '%':
       if (numTwo !== null) {
