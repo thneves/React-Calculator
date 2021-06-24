@@ -1,5 +1,3 @@
-/* eslint-disable react/no-access-state-in-setstate */
-
 import React from 'react';
 import '../index.css';
 import Display from './Display';
@@ -19,8 +17,9 @@ class App extends React.Component {
   }
 
   handleClick(button) {
+    const prev = this.state;
     this.setState(
-      Calculate(this.state, button),
+      Calculate(prev, button),
     );
   }
 
