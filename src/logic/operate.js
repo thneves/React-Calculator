@@ -16,7 +16,14 @@ const Operate = (numberOne, numberTwo, operation) => {
       total = numOne.times(numTwo);
       break;
     case '/':
-      total = numOne.times(numTwo);
+      total = numberTwo === '0' ? 'Math error, start again' : numOne.div(numTwo);
+      break;
+    case '%':
+      if (numTwo !== null) {
+        total = numOne.plus(numTwo.div(100));
+      } else {
+        total = numOne.mod(numTwo);
+      }
       break;
     default:
       total = null;
