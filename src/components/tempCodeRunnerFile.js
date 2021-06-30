@@ -22,11 +22,11 @@ const App = () => {
   return (
     <div className="calculator">
       <Display
-        result={result.total}
-        next={result.next}
-        operation={result.operation}
+        result={total}
+        next={next}
+        operation={operation}
       />
-      <Panel clickHandler={handleClick} />
+      <Panel clickHandler={this.handleClick} />
     </div>
   );
 };
