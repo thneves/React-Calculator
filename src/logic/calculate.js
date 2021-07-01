@@ -32,7 +32,9 @@ const Calculate = (data, button) => {
     case '%':
       if (total && !next) {
         total /= 100;
+        console.log(total);
         total.toString();
+        console.log(total);
       } else if (total && next) {
         operation = button;
       }
