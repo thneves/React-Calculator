@@ -1,3 +1,27 @@
 .home {
-  background-color: black;
+  background-color: #a7bdbe;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 17%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.home h3 {
+  color: #042324;
+  font-size: 26px;
+  padding-top: 100px;
+  margin-bottom: 35px;
+}
+
+.home p {
+  color: #042324;
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+
+.home p a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }

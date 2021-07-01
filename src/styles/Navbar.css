@@ -1,9 +1,10 @@
 nav {
   background-color: #2e6b6e;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 140px;
+  padding: 0 17%;
 }
 
 .title {

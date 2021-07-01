@@ -4,5 +4,11 @@
   align-items: center;
   justify-content: center;
   width: 400px;
-  margin: 100px auto 0 auto;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.back {
+  background-color: #a7bdbe;
+  height: 100vh;
 }
