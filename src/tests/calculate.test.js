@@ -23,12 +23,12 @@ describe('Calculate function', () => {
 
   it('it converts to a negative number', () => {
     const total = Calculate({ total: null, next: '11', operation: null }, '+/-');
-    expect(total).toEqual({ total: -0, next: '-11', operation: null });
+    expect(total).toEqual({ total: '0', next: '-11', operation: null });
   });
 
   it('it converts to a positive number', () => {
     const total = Calculate({ total: null, next: '-22', operation: null }, '+/-');
-    expect(total).toEqual({ total: -0, next: '22', operation: null });
+    expect(total).toEqual({ total: '0', next: '22', operation: null });
   });
 
   it('ir clear all the display', () => {
@@ -38,6 +38,6 @@ describe('Calculate function', () => {
 
   it('it convert the number into a percent number', () => {
     const total = Calculate({ total: '45', next: null, operation: null }, '%');
-    expect(total).toEqual({ total: 0.45, next: null, operation: null });
+    expect(total).toEqual({ total: '0.45', next: null, operation: null });
   });
 });
