@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Home page component 1`] = `
+<div
+  className="home"
+>
+  <h3>
+    Welcome to my page!
+  </h3>
+  <p>
+    This is a Calculator project using React! You can check the source code on this
+    <a
+      href="https://github.com/thneves/React-Calculator"
+    >
+       link. 
+    </a>
+    Math is an interesting thing don't you think?
+  </p>
+  <p>
+    My name is Thales. I'm a software developer, you can check my Github account
+    <a
+      href="https://github.com/thneves"
+    >
+       here.
+    </a>
+  </p>
+</div>
+`;
